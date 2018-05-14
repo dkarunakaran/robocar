@@ -1,0 +1,14 @@
+export PATH=/home/dhanoop/anaconda3/bin:$PATH
+unset PYTHONPATH
+conda create -n image_processing_node python=3.5
+source activate image_processing_node
+export PYTHONPATH="/home/dhanoop/anaconda3/envs/image_processing_node/lib/python3.5/site-packages:$PYTHONPATH"
+pip install pyyaml
+pip install rospkg
+pip install catkin_pkg
+conda install -c conda-forge opencv
+#For python 3.5
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp35-cp35m-linux_x86_64.whl
+pip install keras
+pip install h5py
+

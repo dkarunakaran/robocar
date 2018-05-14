@@ -1,0 +1,10 @@
+export PATH=/home/dhanoop/anaconda3/bin:$PATH
+unset PYTHONPATH
+conda create -n training_node python=3.5
+source activate training_node
+export PYTHONPATH="/home/dhanoop/anaconda3/envs/training_node/lib/python3.5/site-packages"
+pip install pyyaml
+pip install rospkg
+pip install catkin_pkg
+conda install -c conda-forge opencv
+

@@ -1,0 +1,15 @@
+export PATH=/home/dhanoop/anaconda3/bin:$PATH
+conda create -n image_processing_node python=3.4
+source activate image_processing_node
+export PYTHONPATH="/home/dhanoop/anaconda3/envs/image_processing_node/lib/python3.4/site-packages:$PYTHONPATH"
+pip install pyyaml
+pip install rospkg
+pip install catkin_pkg
+conda install -c menpo opencv3
+#Install tensorflow for python 3.4
+#Other tensorflow versions - https://www.tensorflow.org/install/install_linux
+pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.0-cp34-cp34m-linux_x86_64.whl
+pip install keras==2.1.2
+pip install h5py
+
+
